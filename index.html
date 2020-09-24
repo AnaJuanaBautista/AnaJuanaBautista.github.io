@@ -8,33 +8,45 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Ana Juana Bautista Escamilla</title>
 </head>
+<script src="js/smooth-scroll.min.js"></script>
 <body style="background-color:#0A1F45;">
     <br>
     <br>
     <br>
+    <!-- scriprit for scroll -->
+<script>
+    smoothScroll.init({
+        selector: '[scroll]', // Clase en la etiqueta a
+        selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+        speed: 950, // Velocidad
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 0, // Que tan lejos del elemnto va a quedar
+        callback: function (anchor, toggle) { } // funcion después del scrolling
+    });
+</script>
     <center> 
         <img src="IMG/perfil.jpeg" class="bordep" align="center" width="250" height="300"border="0px">
     </center></div>
     <div class="datos">
     <h1><font size="50">Ana Juana Bautista Escamilla</font></h1>
     <h1>Pasante de programación</h1>
-    <h3>E-MAIL anaescamilla731@gmailcom</h3>
+    <h3>anaescamilla731@gmailcom</h3>
     </div>
     <br>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#uno">Acerca de mi</a>
+        <a class="navbar-brand" href="#uno" scroll>Acerca de mi</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#dos">Proyectos <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#tres">Áreas</a>
-            <a class="nav-item nav-link" href="#cuatro">Curriculum</a>
+            <a class="nav-item nav-link active" href="#dos" scroll>Proyectos <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#tres" scroll>Áreas</a>
+            <a class="nav-item nav-link" href="#cuatro" scroll>Curriculum</a>
           </div>
         </div>
       </nav>
-    <div id="uno">
+    <div id="uno" scroll>
     <div class="sub">
         <center><h1>Acerca de mi</h1></center></div>
     <div class="info">
@@ -51,7 +63,7 @@
             <li>Go</li>
         </ol>     
     </div></div>
-    <div id="dos">
+    <div id="dos" scroll>
     <div class="sub">
         <center><h1>Proyectos escolares realizados</h1></center></div>
     <div class="info">
@@ -63,7 +75,7 @@
             <li>Red social con uso de Html,css,php,bootstrap</li>
         </ol>
     </div></div>
-    <div id="tres">
+    <div id="tres" scroll>
     <div class="sub">
         <center><h1>Áreas de interes</h1></center></div>
     <div class="info">
@@ -76,7 +88,7 @@
         <br>
         <br>
     </div></div>
-    <div id="cuatro">
+    <div id="cuatro" scroll>
     <div class="sub">
         <center><h1>Curriculum</h1></center></div>
     <center>
@@ -89,6 +101,5 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
 </body>
 </html>
