@@ -1,0 +1,39 @@
+h1{
+    font: oblique bold 120% cursive;
+  }
+.bordep
+{
+    border: black 7px solid;
+ }
+.info
+{ 
+    border-color:black;
+    border-style: solid;
+    border-width: 3px;
+    padding: 20px;
+    margin: 65px;
+    background-color: blanchedalmond;
+    font: oblique bold 120% cursive;
+} 
+.sub
+{ 
+    border-color:black;
+    border-style: solid;
+    border-width: 4px;
+    padding: 25px;
+    margin: 20px;
+    background-color:#090C2E;
+    font: oblique bold 120% cursive;
+    color: white;
+} 
+.datos
+{ 
+    border-color:black;
+    border-style: solid;
+    border-width: 5px;
+    padding: 20px;
+    margin: 60px;
+    background-color: #08283B;
+    font: oblique bold 120% cursive;
+    color: white;
+} 
