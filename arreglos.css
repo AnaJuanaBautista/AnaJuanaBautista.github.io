@@ -11,10 +11,10 @@
   margin: 65px;
   background-color: blanchedalmond;
 } 
-@media screen and (min-width: 992px)
-{
-  h1{
-    font: oblique bold 120% cursive;
-    color: white;
-  }
-}
+h1
+{ 
+  padding: 20px;
+  margin: 65px;
+  background-color: #2E6175;
+  color: white;
+} 
