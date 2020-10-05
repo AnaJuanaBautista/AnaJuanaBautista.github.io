@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hello Bulma!</title>
+		<!-- aqui se remplazo el el link de css por el de bulma  -->
+		<link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+		<style>
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.is-paddingless-horizontal { padding-left: 0; padding-right: 0; }
+
+.grid {
+	display: grid;
+	grid-template-columns:
+		[xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end];
+}
+
+.grid *  { grid-column: md; }
+.grid-xl { grid-column: xl; }
+
+@media (max-width: 672px) {
+	:root {
+		font-size: 90%;
+	}
+}
+
+		</style>
+	</head>
+	<body>
+
+		<!-- .section -->
+		<section class="section is-paddingless-horizontal">
+			<div class="container grid">
+				<nav class="breadcrumb" aria-label="breadcrumbs">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li class="is-active"><a href="#" aria-current="page">How to build a beautiful blog</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<!-- /.section -->
+		
+		<!-- .section -->
+		<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+			<div class="container grid" style="max-width: 1024px;">
+
+				<!-- en esta parte se carga la imagen de perfil  -->
+				<article class="media center">
+					<figure class="media-left">
+						<span class="image is-64x64">
+							<img src="images/me.jpeg">
+						</span>
+                    </figure>
+                    <!-- son los encabezados que aparecen a la derecha de la imgen   -->
+					<div class="media-content">
+						<div class="content">
+							<p>
+								<strong>Ana Juana Bautista Escamilla</strong> <a>@alguienllamadaanaaa</a><br>
+								<span class="has-text-grey">Autodidacta, inspirada para aprender<br>
+								<time datetime="2018-04-20">Octv 5</time> · 20 min de lectura</span>
+							</p>
+						</div>
+					</div>
+				</article>
+				<!-- /.media -->
+
+				<!-- son los subtitulos  -->
+				<div class="section is-paddingless-horizontal">
+					<h1 class="title is-2">
+						El blog de Ana
+					</h1>
+					<h2 class="subtitle is-3 has-text-grey-light">
+						Siendo un principiante aprendiendo lo basico
+					</h2>
+				</div>
+				<!-- /.section -->
+				
+				<!-- son cards de imagenes del sitio  -->
+				<figure class="columns is-mobile is-variable is-0 is-marginless grid-xl">
+					<div class="column">
+						<div class="image card">
+							<a><img src="images/blogf.jpg"></a>
+						</div>
+					</div>
+					<div class="column">
+						<div class="image card">
+							<a><img src="images/blogf2.png"></a>
+						</div>
+					</div>
+					<div class="column">
+						<div class="image card">
+							<a><img src="images/blogf3.jpg"></a>
+						</div>
+					</div>
+				</figure>
+				<figcaption class="level">
+					<small class="level-item has-text-grey">
+						El blog que esta usted viendo es una activida de practica.
+					</small>
+				</figcaption>
+                <!-- /.columns -->
+                <!-- es el espacio de texto del sitio esta en un content medium que hace que se centre y este en un contenedor  -->
+				<div class="content is-medium">
+					<p>
+                        Estoy muy interesada en la Web y la tecnología, pero actualmente mi conocimiento no es tan amplio como me gustaria. En esta practica estoy aprendiendo
+						<strong>Bulma CSS</strong>, y en mi tiempo libre repaso lenguajes que no domino muy bien o que he olvidado como usar.
+					</p>
+					<p>
+						En mis 5 semestres como estudiante he aprendido algo sobre la Web, <strong>lenguajes de programación</strong>.
+						Con esto doy fin a la primera parte de mi practica.
+					</p>
+				</div>
+
+			</div>
+		</section>
+		<!-- /.section -->
+
+	</body>
+</html>
